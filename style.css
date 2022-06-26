@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgba(218,218,218);
+}
+.show-btn{
+    position:absolute;
+    left:75%;
+    top:83%;
+    cursor:pointer;
+    border-radius:50%;
+    background:orangered;
+    text-align:center;
+    color:#fff;
+    width:90px;
+    height:90px;
+}
+.show-btn i{
+    margin:15px 17px;
+    font-size:60px;
+    text-align: center;
+}
+input[type="checkbox"]{
+    display:none;
+}
+#show:checked ~ .chatbox{
+    display:block;
+}
+.chatbox{
+    display:none;
+    width:400px;
+    height:600px;
+    margin:80px auto;
+    background:#fff;
+    border-radius: 10px;
+    box-shadow:0px 10px 5px rgba(0,0,0,0.1);
+    animation:fadein 2.5s;
+}
+.welcome{
+    color:#fff;
+    padding:15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background:#f87413;
+    height:250px;
+    padding-left: 70px;
+   animation:fadein 5s;
+}
+form{
+    margin:auto;
+    width:350px;
+    height:400px;
+    padding:20px 15px;
+    border-radius: 10px;
+    border:1px solid rgba(236,234,234);
+    z-index:1;
+    top:250px;
+    margin-left:25px;
+    animation:fadein 6s;
+   position: absolute;
+   background:#fff;
+}
+.handshake{
+    width:25px;
+    height:25px;
+}
+img{
+    width:10px;
+    height:10px;
+}
+input[type=radio]{
+    accent-color: orangered;
+    border-radius: 2px solid orangered;
+}
+.chatoption{
+    margin-top:0;
+}
+.box{
+    box-sizing: border-box;
+    border:1px solid #999;
+    font-size:12px;
+    text-align:left;
+    border-radius:10px;
+    padding:12px;
+    margin:10px 0;
+    box-shadow: 0px 0px 1px 2px rgba(130,130,130,0.24);
+    animation: fadein 8s;
+    }
+ button{
+    top:30px;
+    width:300px;
+    margin:auto;
+    padding:4px 6px;
+    border-radius:25px;
+    font-size:14px;
+    cursor-pointer;
+    margin-top:10px;
+    background:#fff;
+    border:1px solid #999;
+    box-shadow: 0px 0px 1px 2px rgba(130,130,130,0.24);
+    animation:fadein 12s;
+    }
+     .chatbox:hover{
+        animation:popup 12s;
+
+     }  
+@keyframes fadein {
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+.show-btn1{ 
+ position:relative;
+cursor:pointer;
+border-radius:50%;
+background:#ff7401;
+box-shadow:0px 0px 1px 2px rgba(130,130,130,0.24); ;
+text-align:center;
+color:#fff;
+width: 70px;
+height:70px;
+display:flex;
+align-items: center;
+top:-50px;
+left:20px;
+
+}
+.show-btn1 i{
+margin:15px 17px;
+font-size:30px;
+}
